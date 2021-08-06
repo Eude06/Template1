@@ -1,0 +1,738 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #222222;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/*-- Navigation Bar --*/
+.navbar {
+    background-color: #252525;
+}
+.navbar-brand {
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+.navbar-brand h2 {
+    font-weight: bold;
+    color: #fff;
+}
+.navbar-nav li {
+    padding-right: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.nav-link {
+    float: right;
+    font-size: 1.1em;
+}
+/*-- End of Navigation Bar --*/
+
+/*-- Carousel image slider section --*/
+.carousel-caption {
+	position: absolute;
+	top: 42%;
+	transform: translateY(-50%);
+}
+.carousel-caption h1 {
+	font-size: 500%;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 15px #000;
+}
+.carousel-button {
+    text-transform: uppercase;
+    margin-top: 2%;
+}
+/*-- Carousel image slider Section --*/
+
+/*-- Services Section --*/
+#Services {
+    margin-top: 5%;
+}
+#Services h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#Services .lead {
+    padding-right: 20%;
+    padding-left: 20%;
+}
+hr.new1 {
+    border-top: 2px solid #121212;
+    width: 40%;
+    align-content: center;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+}
+.service-items {
+    padding: 5px 3px;
+    margin-bottom: 5%;
+}
+.service-items h3 {
+    font-weight: bold;
+}
+.fa-code {
+	color: #e54d26;
+}
+.fa-bold {
+	color: #563d7c;
+}
+.fa-css3 {
+	color: #2163af;
+}
+.fa-code, .fa-bold, .fa-css3 {
+	font-size: 4em;
+	margin: 1rem;
+}
+/*-- End of Services Section --*/
+
+/*-- About us section --*/
+.left-side {
+    background-color: #C2C2C2;
+    padding: 5%;
+}
+.left-side h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+hr.new2 {
+    border-top: 2px solid #b4b4b4;
+    width: 70%;
+    float: left;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+}
+.right-side {
+	background-image: url('../Images/desk.png');
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: cover;
+}
+/*-- End of About US section --*/
+
+/*-- Counter Section --*/
+.counter {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.counter-count {
+    font-size: 28px;
+    color: #121212;
+    position: relative;
+    text-align: center;
+    width: 140px;
+    height: 120px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: inline-block;
+}
+.counter-count h3 {
+    font-size: 15px;
+    color: #121212;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/*-- Counter Section --*/
+
+/*-- Testimonial Section --*/
+#testimonials h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.big-banner {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../Images/Testimonial bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 355px;
+    padding-top: 90px;
+}
+hr.new3 {
+    border-top: 2px solid #b4b4b4;
+    width: 50%;
+    align-content: center;
+    margin-top: -5px;
+}
+.testimonial p {
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+/*-- End of Testimonial Section --*/
+
+/*-- Team Members Section --*/
+section.our-team {
+    padding: 70px 0px;
+    text-align: center;
+}
+.our-team .member {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s;
+    border-radius: 10%;
+}
+hr.new4 {
+    border-top: 2px solid #121212;
+    width: 58%;
+    align-content: center;
+    margin-top: -5px;
+}
+.our-team h2 {
+    font-size: 36px;
+    color: #121212;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.our-team p {
+    color: #121212;
+    width: 70%;
+    margin: 3px auto 40px;
+}
+.our-team .member .member-info {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
+.our-team .member .member-detail {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+}
+.our-team .member .social {
+    position: absolute;
+    left: 0;
+    bottom: -48px;
+    right: 0;
+    height: 48px;
+    transition: bottom ease-in-out 0.4s;
+    text-align: center;
+}
+.our-team .member .social a {
+    margin: 0 10px;
+    display: inline-block;
+    color: #fff;
+}
+.our-team .member .social a:hover {
+    color: #c2c2c2;
+}
+.our-team .member .social i {
+    font-size: 18px;
+    margin: 0 2px;
+}
+.our-team .member:hover .member-info {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.83) 0%, rgba(0, 0, 0, 0.57) 20%, rgba(121, 85, 72, 0.09) 100%);
+    opacity: 1;
+    transition: 0.4s;
+}
+.our-team .member:hover .member-detail {
+    bottom: 80px;
+}
+.our-team .member:hover .social {
+    bottom: 10px;
+}
+.team-info h4 {
+    color: #121212;
+    font-weight: bold;
+}
+.team-info h6 {
+    font-weight: bold;
+    color: #121212;
+}
+/*-- End of Team Members section --*/
+
+
+/*-- Contact Us Section --*/
+.contact-us {
+    padding: 70px 0px;
+    background: #898989;
+}
+.section-title h2 {
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    display: inline-block;
+}
+.section-title p {
+    color: #000000;
+    margin-bottom: 30px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.contact-us input, .contact-us textarea {
+    min-height: 188px;
+    max-width: 100%;
+}
+.contact-us .map {
+    overflow: hidden;
+    border-radius: 10px;
+}
+/*-- End of Contact Us Section --*/
+
+/*-- Footer Section --*/
+footer {
+    background: #3a3a3a;
+    color: #fff;
+    font-size: 14px;
+}
+footer .footer-top {
+    background: #4e4e4e;
+    padding: 50px 0px 20px;
+}
+footer .address h3 {
+    font-weight: bold;
+}
+footer .address p {
+    font-size: 16px;
+    color: #ddd;
+    font-style: italic;
+}
+footer .social-links a {
+    font-size: 17px;
+    display: inline-block;
+    background: #28251f;
+    color: #fff;
+    line-height: 1;
+    padding: 9px 0;
+    margin-right: 5px;
+    border-radius: 100%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.4s;
+}
+footer .social-links a:hover {
+    background: #c2c2c2;
+}
+footer h4 {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    padding-bottom: 12px;
+}
+footer .footer-menus {
+    margin-bottom: 30px;
+}
+footer .footer-menus ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer .footer-menus ul li {
+    margin-bottom: 10px;
+}
+footer .footer-menus ul i {
+    color: #ffffff;
+    font-size: 12px;
+    margin-right: 3px;
+}
+footer .footer-menus ul a {
+    color: #fff;
+    text-decoration: none;
+}
+footer .footer-menus ul a:hover {
+    color: #cddc39;
+}
+.footer-bottom {
+    padding: 20px 0px;
+}
+footer .footer-bottom a {
+    color: #cddc39;
+    text-decoration: none;
+}
+/*-- End of Footer Section --*/
+
+@media (min-width: 1025px) {
+     /*-- Carousel for welcome section --*/
+     .carousel-caption {
+        top: 50%;
+    }
+    .carousel-caption h1 {
+        font-size: 100px;
+    }
+    .carousel-button {
+        padding: 20px;
+    }
+}
+@media (max-width: 768px) {
+    /*-- Navigation section --*/
+    .navbar-brand h2 {
+        font-size: 24px;
+    }
+    .nav-link {
+        font-size: .8em;
+    }
+    .navbar-brand {
+        font-size: 1.3em;
+    }
+    /*-- Carousel for welcome section --*/
+    .carousel-caption {
+        top: 40%;
+    }
+    .carousel-caption h1 {
+        font-size: 60px;
+    }
+
+    /*-- Services Section -- */
+    #Services h2 {
+        font-size: 30px;
+    }
+    #Services p {
+        font-size: 20px;
+    }
+    .column1 h3 {
+        font-size: 24px;
+    }
+    .column1 p {
+        font-size: 20px;
+    }
+    .fa-code, .fa-bold, .fa-css3 {
+        font-size: 3em;
+        margin: 1rem;
+    }
+
+    /*-- About Us section --*/
+    .left-side h2 {
+        font-size: 30px;
+    }
+    .left-side p {
+        font-size: 20px;
+    }
+    .right-side {
+        background-image: none;
+    }
+
+    /*-- Counter Section --*/
+    .counter {
+        margin-top: 20px;
+        margin-bottom: 35px;
+    }
+    .counter-count h3 {
+        font-size: 24px;
+    }
+
+    /*-- Testimonial Section --*/
+    .big-banner {
+        padding-bottom: 57%;
+    }
+    #testimonials h2 {
+        font-size: 30px;
+    }
+    .testimonial p {
+        font-size: 20px;
+    }
+    .testimonial h4 {
+        font-size: 22px;
+    }
+    .testimonial h6 {
+        font-size: 20px;
+    }
+
+    /*-- Meet our team section --*/
+    .our-team h2 {
+        font-size: 30px;
+    }
+    .our-team p {
+        font-size: 20px;
+    }
+    .team-info h4 {
+        font-size: 22px;
+    }
+    .team-info h6 {
+        font-size: 20px;
+        color: #121212;
+    }
+}
+@media (max-width: 425px) {
+    /*-- Navigation Section --*/
+    .navbar-brand h2 {
+        font-size: 22px;
+    }
+    /*-- Carousel for welcome section --*/
+    .carousel-caption {
+        top: 35%;
+    }
+    .carousel-caption h1 {
+        font-size: 30px;
+    }
+
+    /*-- Services Section -- */
+    #Services h2 {
+        font-size: 26px;
+    }
+    #Services p {
+        font-size: 17px;
+    }
+    .column1 h3 {
+        font-size: 21px;
+    }
+    .column1 p {
+        font-size: 17px;
+    }
+    .fa-code, .fa-bold, .fa-css3 {
+        font-size: 2.6em;
+        margin: 1rem;
+    }
+
+    /*-- About us Section --*/
+    .left-side h2 {
+        text-align: center;
+        font-size: 26px;
+    }
+    .left-side p {
+        font-size: 17px;
+    }
+    .right-side {
+        background-image: none;
+    }
+
+    /*-- Counter Section --*/
+    .counter {
+        padding-top: 20%;
+    }
+    .counter-count h3 {
+        font-size: 21px;
+    }
+
+    /*-- Testimonial Section --*/
+    .big-banner {
+        padding-top: 10%;
+        padding-bottom: 105%;
+    }
+    #testimonials h2 {
+        font-size: 26px;
+    }
+    .testimonial p {
+        font-size: 17px;
+    }
+    .testimonial h4 {
+        font-size: 20px;
+    }
+    .testimonial h6 {
+        font-size: 18px;
+    }
+    hr.new3 {
+        width: 70%;
+    }
+
+    /*-- Meet our team section --*/
+    
+    .our-team h2 {
+        font-size: 26px;
+    }
+    .our-team p {
+        font-size: 17px;
+    }
+    .our-team .member {
+        border-radius: 10%;
+        margin: 10% 10%;
+    }
+    .team-info h4 {
+        font-size: 20px;
+    }
+    .team-info h6 {
+        font-size: 18px;
+        color: #121212;
+    }
+}
+@media (max-width: 375px) {
+    /*-- Navigation Section --*/
+    .navbar-brand h2 {
+        font-size: 20px;
+    }
+    /*-- Carousel for welcome section --*/
+    .carousel-caption {
+        top: 30%;
+    }
+    .carousel-caption h1 {
+        font-size: 30px;
+    }
+
+    /*-- Services Section -- */
+    #Services h2 {
+        font-size: 24px;
+    }
+    #Services p {
+        font-size: 16px;
+    }
+    .column1 h3 {
+        font-size: 19px;
+    }
+    .column1 p {
+        font-size: 16px;
+    }
+    .fa-code, .fa-bold, .fa-css3 {
+        font-size: 2.2em;
+        margin: 1rem;
+    }
+
+    /*-- About us Section --*/
+    
+    .left-side h2 {
+        text-align: center;
+        font-size: 24px;
+    }
+    .left-side p {
+        font-size: 16px;
+    }
+    
+    /*-- Counter Section --*/
+    .counter {
+        padding-top: 20%;
+    }
+    .counter-count h3 {
+        font-size: 19px;
+    }
+
+    /*-- Testimonial Section --*/
+    .big-banner {
+        padding-top: 10%;
+        padding-bottom: 118%;
+    }
+    #testimonials h2 {
+        font-size: 24px;
+    }
+    .testimonial p {
+        font-size: 16px;
+    }
+    .testimonial h4 {
+        font-size: 19px;
+    }
+    .testimonial h6 {
+        font-size: 17px;
+    }
+
+    /*-- Meet our team section --*/
+    .our-team h2 {
+        font-size: 24px;
+    }
+    .our-team p {
+        font-size: 16px;
+    }
+    hr.new4 {
+        width: 60%;
+    }
+    .our-team .member {
+        border-radius: 10%;
+        margin: 10% 10%;
+    }
+    .team-info h4 {
+        font-size: 19px;
+    }
+    .team-info h6 {
+        font-size: 17px;
+        color: #121212;
+    }
+}
+@media (max-width: 320px) {
+    /*-- Navigation Section --*/
+    .navbar-brand h2 {
+        font-size: 18px;
+    }
+    /*-- Carousel for welcome section --*/
+    .carousel-inner img {
+        height: 210px;
+    }
+    .carousel-caption {
+        top: 35%;
+    }
+    .carousel-caption h1 {
+        font-size: 30px;
+    }
+    .carousel-button {
+        font-size: 10px;
+    }
+
+    /*-- Services Section -- */
+    #Services h2 {
+        font-size: 22px;
+    }
+    #Services p {
+        font-size: 15px;
+    }
+    .column1 h3 {
+        font-size: 18px;
+    }
+    .column1 p {
+        font-size: 15px;
+    }
+    .fa-code, .fa-bold, .fa-css3 {
+        font-size: 2em;
+        margin: 1rem;
+    }
+    /*-- About us Section --*/
+    .left-side {
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+    .left-side h2 {
+        font-size: 22px;
+    }
+    .left-side p {
+        font-size: 15px;
+    }
+
+    /*-- Counter Section --*/
+    .counter-count h3 {
+        font-size: 18px;
+    }
+
+    /*-- Testimonial Section --*/
+    .big-banner {
+        padding-top: 10%;
+        padding-bottom: 140%;
+    }
+    #testimonials h2 {
+        font-size: 22px;
+    }
+    .testimonial p {
+        font-size: 15px;
+    }
+    .testimonial h4 {
+        font-size: 18px;
+    }
+    .testimonial h6 {
+        font-size: 16px;
+    }
+    hr.new3 {
+        border-top: 2px solid #b4b4b4;
+        width: 80%;
+        align-content: center;
+        margin-top: -5px;
+    }
+
+    /*-- Meet our team section --*/
+    .our-team h2 {
+        font-size: 22px;
+    }
+    .our-team p {
+        font-size: 15px;
+    }
+    hr.new4 {
+        width: 70%;
+    }
+    .our-team .member {
+        border-radius: 10%;
+        margin: 10% 10%;
+    }
+    .team-info h4 {
+        font-size: 18px;
+    }
+    .team-info h6 {
+        font-size: 16px;
+        color: #121212;
+    }
+}
