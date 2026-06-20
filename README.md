@@ -25,4 +25,4 @@ To customize this template for your own business, follow these simple steps:
 
 1. **Clone the repository:**
 ```bash
-   git clone [https://github.com/Eude06/Template1.git](https://github.com/your-username/your-repo-name.git)
+   git clone [https://github.com/Eude06/Template1.git](https://github.com/Eude06/Template1.git)
